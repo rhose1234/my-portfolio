@@ -1,0 +1,191 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: rgb(6, 61, 6);
+    overflow-x: hidden;
+    height: max-content;
+    
+    
+  }
+  header{
+    position: relative;
+    z-index: 2;
+    width: 100%;
+  }
+  
+  .header-inner{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1em 2em;
+  }
+
+  .nav-toggle{
+    display: none;
+    place-items: center;
+
+  }
+
+  .bars{
+    font-size: 26px;
+    margin-right: 10px;
+    color: white;
+    display: none;
+    cursor: pointer;
+    transition: color 0.6s ease;
+    text-transform: capitalize;
+    
+  
+  }
+  .nav-menu {
+    display: flex;
+    gap: 1em;
+    list-style: none;
+  }
+
+  .nav-link{
+    color: white;
+    font-size: 30px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-decoration: none;
+    text-transform: uppercase;
+  }
+  .nav-link:hover{
+    color: orangered;
+  }
+
+  a{
+    text-decoration: none;
+    color: inherit;
+  }
+  
+ .mobile-menu{
+    position: absolute;
+    top: 10%;
+    right:100%;
+    width: 50%;
+    height: 50%;
+    z-index: 2;
+    background-color: white;
+    
+    opacity: 0;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    pointer-events: none;
+    
+  }
+  .bodyimg img{
+      position: absolute;
+      top:40%;
+      left: 20%;
+      height: 400px;
+  }
+h1{
+    color: white;
+    font-family: IBM Plex Serif;
+    font-size: 55px;
+    font-weight: 700;
+    line-height: 62px;
+    letter-spacing: 0em;
+    text-align: left;
+    text-transform: uppercase;
+    width: 70%;
+    position: absolute;
+    left: 57%;
+    top: 50%;
+    
+}
+.btn{
+    color: navy;
+    font-family: IBM Plex Serif;
+    font-size: 25px;
+    font-weight: 700;
+    line-height: 25px;
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 5px 30px;
+    border-radius: 500px;
+    display: inline-block;
+    transition: all .4s ease-in-out;
+    width: 95px;
+    height: 32px;
+    background: orangered;
+    border: 2px solid navy;
+    position: absolute;
+    top: 73%;
+    left: 59%;
+}
+.btn:hover{
+    background: navy;
+    border-color: orangered;
+    color: orangered;
+
+}
+  @media screen and (max-width: 768px){
+*{
+  margin: 0;
+  padding: 0;
+}
+    
+  
+    .bars{
+      display: block;
+    
+    }
+    
+    .nav-menu{
+      display: none;
+    }
+    
+    .active{
+    left:50%;
+    opacity: 1;
+    pointer-events: auto;
+    transition: left 0.6s ease-in-out;
+    
+    }
+    
+    .nav-link{
+      font-size: 24px;
+      margin: 20px 0;
+      color:orangered;
+     
+      font-weight: 500;
+    }
+    .nav-link:hover{
+      background-color: navy;
+      
+    }
+    .bodyimg img{
+    position: absolute;
+    top:20%;
+    left: 10%;
+    height: 300px;
+    width: 300px;
+    }
+    h1{
+    position: absolute;
+    top: 70%;
+    left: 24%;
+    font-size: 40px;
+    }
+    .btn{
+        position: absolute;
+        top: 90%;
+        left:25% ;
+    
+    }
+  }
+  @media screen and (max-width: 576px) {
+    .navbar-brand{
+      margin-left: 10px !important;
+    }
+    .nav-toggle {
+      display: grid;
+    }
+  }

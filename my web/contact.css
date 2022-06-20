@@ -1,0 +1,187 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+body{
+    
+   background-color: white;
+   overflow-x: hidden;
+   overflow-y: visible;
+   
+  
+    
+  }
+  header{
+    position: relative;
+    z-index: 2;
+    width: 100%;
+    
+  }
+  .header-inner{
+    display: flex;
+    padding: 1em 2em;
+    justify-content: space-between;
+    align-items: center;
+  
+  }
+  .nav-toggle{
+    display: none;
+    place-items: center;
+  }
+  .bars{
+    font-size: 26px;
+    color: black;
+    margin-right: 10px;
+    display: none;
+    cursor: pointer;
+    transition: color 0.6s ease;
+    text-transform: capitalize;
+  }
+  .bars:hover{
+    color: orangered;
+  }
+  .nav-link{
+    margin-left: 30px;
+    color:orangered;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-decoration: none;
+    transition: color 0.6s ease;
+    font-size: 30px;
+    text-transform: uppercase;
+    
+  }
+  .nav-link:hover{
+    color:black;
+    
+  }
+  a{
+    text-decoration: none;
+    color: inherit;
+  }
+ .mobile-menu{
+    position: absolute;
+    top: 12%;
+    right: 100%;
+    width: 50%;
+    height: 50%;
+    z-index:2;
+    margin-top: -10px;
+    background-color:white;
+    opacity: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    pointer-events: none;
+  }
+  .content img{
+    width: 100%;
+    height: 800px;
+    overflow-x: hidden;
+    
+  }
+  .myform{
+    width: 20%;
+    display: inline-block;
+    position: absolute;
+    top: 50%;
+    left: 25%;
+  }
+  .myform input{
+    height: 50px;
+    width: 700px;
+    border-radius: 10px;
+    padding: 10px 8px;
+    border-style: none;
+    
+    
+  }
+  .myform label{
+    font-size: 25px;
+    text-transform: capitalize;
+    
+  }
+  .myform .msg input{
+    height: 100px;
+  }
+  .myform .submit input{
+    width: 200px;
+    margin-top: 30px;
+    margin-left: 180px;
+    background-color: navy;
+    color: white;
+    font-size: 30px;
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+    font-weight: 600;
+  }
+  .myform .submit input:hover{
+    background-color: transparent;
+    border:2px solid orangered;
+    color: navy;
+  }
+
+  @media screen and (max-width: 768px){
+    *{
+      margin: 0;
+      padding: 0;
+    }
+    
+    .bars{
+      display: block;
+    }
+    
+    .nav-menu{
+      display: none;
+    }
+    
+    .active{
+    left: 50%;
+    opacity: 1;
+    pointer-events: auto;
+    transition: left 0.6s ease-in-out;
+    }
+    
+    .nav-link{
+      font-size: 24px;
+      margin: 20px 0;
+      color: black;
+    }
+    .content img{
+      width: 100%;
+      height: 800px;
+      
+    }
+    .myform{
+      width: 20%;
+      left: 12%;
+      top: 40%;
+    }
+    .myform input{
+      height: 40px;
+      width: 270px;
+    }
+    .myform .submit input{
+      margin-left: 60px;
+      width: 150px;
+      font-size: 20px;
+      background-color: navy;
+      color: white;
+      text-transform: uppercase;
+      font-weight: 600;
+    }
+    
+  }
+  @media screen and (max-width: 576px) {
+    .navbar-brand{
+      margin-left: 10px !important;
+    }
+    .nav-toggle {
+      display: grid;
+    }
+    
+  }
+
+
+  
